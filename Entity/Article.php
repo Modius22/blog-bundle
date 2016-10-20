@@ -196,4 +196,9 @@ class Article
     {
         return $this->updateTime;
     }
+
+    public function __construct()
+    {
+        $this->tags = new ArrayCollection();
+    }
 }
