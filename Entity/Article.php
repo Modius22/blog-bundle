@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Article
  *
  * @ORM\Table(name="article")
- * @ORM\Entity(repositoryClass="modius22\blog-bundle\Repository\ArticleRepository")
+ * @ORM\Entity(repositoryClass="modius22\BlogBundle\Repository\ArticleRepository")
  */
 
 class Article

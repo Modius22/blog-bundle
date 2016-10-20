@@ -15,6 +15,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Tags
 {
   /**
+   * @ORM\Column(type="integer")
+   * @ORM\Id
+   * @ORM\GeneratedValue(strategy="AUTO")
+   */
+  private $id;
+
+  /**
    * @var name
    *
    * @ORM\Column(name="name", type="string", length=100)
@@ -30,4 +37,14 @@ class Tags
    {
        $this->name = $name;
    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }
