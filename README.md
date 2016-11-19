@@ -1,2 +1,2 @@
 # blogBundle
-Blog Bundle for Symfony
+Blog Bundle for Symfony 3
