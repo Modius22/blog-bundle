@@ -1,8 +1,9 @@
 {% extends "BlogBundle::base.html.twig" %}
 
-{% block title %}{{ article.title }}{% endblock %}
+{% block title %}Article Overview{% endblock %}
 
 {% block body %}
-   <h1>{{ article.title }}</h1>
-
+{% for art in article %}
+   <h1>{{ art.title }}</h1>
+{% endfor %}
 {% endblock %}

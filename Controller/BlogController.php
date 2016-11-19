@@ -22,5 +22,6 @@ class BlogController extends Controller
       //var_dump($article);
       //exit;
       return array('article' => $article);
+      
     }
 }
