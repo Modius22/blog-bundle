@@ -6,5 +6,8 @@
   {% for art in article %}
      <h1>{{ art.title }}</h1>
      {{ art.content }}
+     {{ art.status }}
+     {{ art.createTime | date }}
+     {{ art.updateTime | date }}
   {% endfor %}
 {% endblock %}
