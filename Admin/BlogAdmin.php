@@ -15,24 +15,48 @@ class BlogAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-        ->add('title', null, array(
-          'label' => 'label.blog.admin.page_title',
+        ->with('Content', array('class' => 'col-md-9'))
+          ->add('title', null, array(
+            'label' => 'label.blog.admin.article_title',
+          ))
+          ->add('content', CKEditorType::class, array(
+          ))
+        ->end()
+        ->with('Meta Data', array('class' => 'col-md-3'))
+        ->add('tags', null, array(
+          'label' => 'label.blog.admin.tags'
         ))
-        ->add('content', CKEditorType::class, array(
-
+        ->add('status', null, array(
+          'label' => 'label.blog.admin.status'
         ))
+        ->add('createTime', null, array(
+          'label' => 'label.blog.admin.create_time'
+        ))
+        ->add('updateTime', null, array(
+          'label' => 'label.blog.admin.update_time'
+        ))
+        ->end()
         ;
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper->add('title', null, array (
-          'label' => 'label.blog.admin.page_title'
+          'label' => 'label.blog.admin.article_title'
         ));
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('name');
+        $listMapper->addIdentifier('title', null, array(
+          'label' => 'label.blog.admin.article_title',))
+          ->add('status', null, array(
+            'label' => 'label.blog.admin.status'
+          ))
+          ->add('createTime', null, array(
+            'label' => 'label.blog.admin.create_time'
+          ))
+
+          ;
     }
 }

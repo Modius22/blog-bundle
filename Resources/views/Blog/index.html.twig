@@ -5,7 +5,7 @@
 {% block body %}
   {% for art in article %}
      <h1>{{ art.title }}</h1>
-     {{ art.content }}
+     {{ art.content | raw}}
      {{ art.status }}
      {{ art.createTime | date }}
      {{ art.updateTime | date }}
