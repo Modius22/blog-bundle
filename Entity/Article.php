@@ -1,13 +1,8 @@
 <?php
 
-
-
 namespace modius22\BlogBundle\Entity;
 
-
-
 use Doctrine\ORM\Mapping as ORM;
-
 
 /**
  * Article
