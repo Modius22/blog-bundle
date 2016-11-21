@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="" >
+    <body>
+      <trans-unit id="label.blog.admin.article_title">
+        <source>label.blog.admin.article_title</source>
+        <target>Überschrift</target>
+      </trans-unit>
+      <trans-unit id="label.blog.admin.tags">
+        <source>label.blog.admin.tags</source>
+        <target>Tags</target>
+      </trans-unit>
+      <trans-unit id="label.blog.admin.status">
+        <source>label.blog.admin.status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="label.blog.admin.create_time">
+        <source>label.blog.admin.create_time</source>
+        <target>Veröffentlicht</target>
+      </trans-unit>
+      <trans-unit id="label.blog.admin.update_time">
+        <source>label.blog.admin.update_time</source>
+        <target>Änderung</target>
+      </trans-unit>
+      <trans-unit id="empty">
+        <source></source>
+        <target>-- Kein/e --</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,1 +1,13 @@
-Hello World!
+{% extends "BlogBundle::base.html.twig" %}
+
+{% block title %}Article Overview{% endblock %}
+
+{% block body %}
+  {% for art in article %}
+     <h1>{{ art.title }}</h1>
+     {{ art.content | raw}}
+     {{ art.status }}
+     {{ art.createTime | date }}
+     {{ art.updateTime | date }}
+  {% endfor %}
+{% endblock %}

@@ -19,7 +19,8 @@ class BlogController extends Controller
       $em = $this->getDoctrine()->getManager();
       $repo = $em->getRepository('BlogBundle:Article');
       $article = $repo->findAll();
-
+      
       return array('article' => $article);
+
     }
 }
