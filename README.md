@@ -2,4 +2,7 @@
 Blog Bundle for Symfony 3
 
 ## requirement
--Sonata Admin Bundle
+-Sonata Admin Bundlei
+-CKEditorBundle
+
+##Configuration
