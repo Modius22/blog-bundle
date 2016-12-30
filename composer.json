@@ -1,2 +1,21 @@
 {
+    "name": "modius22/blog-bundle",
+    "description": "A Blog Bundle for Symfony3",
+    "version": "1.0.3",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=5.3.3",
+        "egeloen/ckeditor-bundle": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Piazzi",
+            "email": "info@piazzi-media.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": { "modius22\\BlogBundle\\": "" }
+    }
 }
