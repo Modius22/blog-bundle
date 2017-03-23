@@ -1,7 +1,7 @@
 {
     "name": "modius22/BlogBundle",
     "description": "A Blog Bundle for Symfony3",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "symfony-bundle",
     "require": {
         "php": ">=5.5",
