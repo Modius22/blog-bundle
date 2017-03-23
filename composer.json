@@ -14,7 +14,7 @@
             "email": "info@piazzi-media.de"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": { "modius22\\BlogBundle\\": "" }
     }
