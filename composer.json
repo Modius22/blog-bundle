@@ -1,19 +1,10 @@
 {
-<<<<<<< HEAD
     "name": "modius22/BlogBundle",
     "description": "A Blog Bundle for Symfony3",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "symfony-bundle",
     "require": {
         "php": ">=5.5",
-=======
-    "name": "modius22/blog-bundle",
-    "description": "A Blog Bundle for Symfony3",
-    "version": "1.0.3",
-    "type": "symfony-bundle",
-    "require": {
-        "php": ">=5.3.3",
->>>>>>> ade4576136b5812d4b079dab381ead9fe90dc972
         "egeloen/ckeditor-bundle": "^4.0"
     },
     "license": "MIT",
