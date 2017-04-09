@@ -1,4 +1,6 @@
 services:
-#    blog.example:
-#        class: modius22\BlogBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+    admin.blog.article:
+        class: modius22\BlogBundle\Admin\BlogAdmin
+        arguments: [~, modius22\BlogBundle\Entity\Article, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, translation_domain: messages, group: label.admin.group.blog_bundle, label: label.blog.admin.article, label_translator_strategy: sonata.admin.label.strategy.underscore  }
